@@ -152,10 +152,10 @@ a:hover { text-decoration: underline; }
 
 .coauthors {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.paper p { margin: 5px 0; }
+.paper p { margin: 2px 0; }
 .venue, .muted { color: var(--muted); }
 .paper-links { font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
 
