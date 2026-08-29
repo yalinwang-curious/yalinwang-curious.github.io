@@ -137,26 +137,36 @@ a:hover { text-decoration: underline; }
   margin: 0 0 35px;
 }
 
-.paper h3 {
+.paper-title {
   color: var(--heading);
   font-size: 18px;
   line-height: 1.45;
   font-weight: 600;
-  margin: 0 0 2px;
+  margin: 0 0 4px;
+}
+
+.paper-title a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.paper-title a:hover {
+  text-decoration: underline;
 }
 
 .venue {
-  margin-top: 0;
-  margin-bottom: 1px;
+  margin: 0 0 2px;
+  color: var(--muted);
 }
 
 .coauthors {
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 0 10px;
 }
 
-.paper p { margin: 2px 0; }
-.venue, .muted { color: var(--muted); }
+.paper p {
+  margin: 2px 0;
+}
+
 .paper-links { font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
 
 .teaching-list { margin-top: 40px; }
