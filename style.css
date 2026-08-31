@@ -145,8 +145,8 @@ a:hover { text-decoration: underline; }
 
 .paper-title {
   color: var(--heading);
-  font-size: 18px;
-  line-height: 1.45;
+  font-size: 20px;
+  line-height: 1.4;
   font-weight: 600;
   margin: 0 0 4px;
 }
@@ -166,11 +166,38 @@ a:hover { text-decoration: underline; }
 }
 
 .coauthors {
-  margin: 0 0 10px;
+  margin: 0 0 2px;
 }
 
 .paper p {
   margin: 2px 0;
+}
+
+.paper p,
+.paper-notes li,
+.chinese-publications li {
+  text-align: justify;
+}
+
+.paper-notes {
+  margin-top: 4px;
+}
+
+.paper-notes a {
+  text-decoration: underline;
+}
+
+.subsection-title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.chinese-title {
+  margin-bottom: 8px;
+}
+
+.chinese-publications {
+  margin-top: 0;
 }
 
 .paper-links { font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
