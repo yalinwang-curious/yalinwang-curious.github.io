@@ -231,6 +231,13 @@ a:hover {
   text-decoration: underline;
 }
 
+.paper-link {
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
 /* Journal / venue */
 
 .venue {
