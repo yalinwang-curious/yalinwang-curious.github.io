@@ -124,10 +124,6 @@ a:hover { text-decoration: underline; }
   font-size: 11px;
 }
 
-.content-page {
-  max-width: 760px;
-  padding: 65px 0 90px;
-}
 
 .research-section { margin-top: 15px; }
 
@@ -140,7 +136,7 @@ a:hover { text-decoration: underline; }
 }
 
 .paper {
-  margin: 0 0 35px;
+  margin: 0 0 20px;
 }
 
 .paper-title {
@@ -180,7 +176,7 @@ a:hover { text-decoration: underline; }
 }
 
 .paper-notes {
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .paper-notes a {
