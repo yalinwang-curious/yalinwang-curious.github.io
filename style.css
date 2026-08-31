@@ -7,9 +7,13 @@
   --page-width: 960px;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -26,12 +30,22 @@ a {
   text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Page shell
+========================= */
 
 .site-shell {
   width: min(var(--page-width), calc(100% - 44px));
   margin: 0 auto;
 }
+
+/* =========================
+   Header
+========================= */
 
 .site-header {
   min-height: 104px;
@@ -48,7 +62,13 @@ a:hover { text-decoration: underline; }
   letter-spacing: .01em;
 }
 
-.brand:hover { text-decoration: none; }
+.brand:hover {
+  text-decoration: none;
+}
+
+/* =========================
+   Navigation
+========================= */
 
 .nav {
   display: flex;
@@ -61,6 +81,7 @@ a:hover { text-decoration: underline; }
   color: #555c64;
   font-size: 12px;
   letter-spacing: .12em;
+  font-weight: 400;
 }
 
 .nav a:hover,
@@ -68,6 +89,14 @@ a:hover { text-decoration: underline; }
   color: var(--accent);
   text-decoration: none;
 }
+
+.nav a.active {
+  font-weight: 700;
+}
+
+/* =========================
+   Home page
+========================= */
 
 .home-grid {
   display: grid;
@@ -77,7 +106,9 @@ a:hover { text-decoration: underline; }
   align-items: start;
 }
 
-.home-copy { max-width: 600px; }
+.home-copy {
+  max-width: 600px;
+}
 
 .home-copy h1,
 .content-page > h1 {
@@ -88,19 +119,32 @@ a:hover { text-decoration: underline; }
   margin: 0 0 31px;
 }
 
-.content-page {
-  max-width: 760px;
-  padding: 30px 0 90px;
-  text-align: justify;
+.home-copy p {
+  margin: 0 0 22px;
 }
 
-.home-copy p { margin: 0 0 22px; }
+.link-row {
+  margin-top: 30px !important;
+}
 
-.link-row { margin-top: 30px !important; }
-.dot { color: #a1a6ac; padding: 0 8px; }
+.dot {
+  color: #a1a6ac;
+  padding: 0 8px;
+}
 
-.portrait-wrap { width: 280px; }
-.portrait { width: 100%; height: auto; display: block; }
+/* =========================
+   Portrait
+========================= */
+
+.portrait-wrap {
+  width: 280px;
+}
+
+.portrait {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .portrait-placeholder {
   width: 100%;
@@ -124,16 +168,47 @@ a:hover { text-decoration: underline; }
   font-size: 11px;
 }
 
+/* =========================
+   Content page
+========================= */
 
-.research-section { margin-top: 0; }
+.content-page {
+  max-width: 760px;
+  padding: 30px 0 90px;
+}
+
+/* =========================
+   Research page
+========================= */
+
+.research-section {
+  margin-top: 0;
+}
 
 .research-section h2,
 .teaching-list h2 {
   color: var(--heading);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 22px;
   margin: 0 0 24px;
 }
+
+/* English / Chinese headings */
+
+.subsection-title {
+  color: var(--heading);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.chinese-title {
+  margin-bottom: 6px;
+}
+
+/* Individual papers */
 
 .paper {
   margin: 0 0 20px;
@@ -156,14 +231,20 @@ a:hover { text-decoration: underline; }
   text-decoration: underline;
 }
 
+/* Journal / venue */
+
 .venue {
   margin: 0 0 2px;
   color: var(--muted);
 }
 
+/* Coauthors */
+
 .coauthors {
   margin: 0 0 2px;
 }
+
+/* Paper text */
 
 .paper p {
   margin: 2px 0;
@@ -175,39 +256,73 @@ a:hover { text-decoration: underline; }
   text-align: justify;
 }
 
+/* Summary bullets */
+
 .paper-notes {
   margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.paper-notes li {
+  margin-bottom: 0;
 }
 
 .paper-notes a {
   text-decoration: underline;
 }
 
-.subsection-title {
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.chinese-title {
-  margin-bottom: 8px;
-}
+/* Chinese publications */
 
 .chinese-publications {
   margin-top: 0;
+  margin-bottom: 0;
 }
+
+.chinese-publications li {
+  margin-bottom: 2px;
+}
+
+/* Working papers */
 
 .working-papers {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
-.paper-links { font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
+/* Other paper links */
 
-.teaching-list { margin-top: 40px; }
-.course { margin-bottom: 30px; }
-.course h2 { margin-bottom: 2px; font-size: 19px; }
-.course p { margin: 0; color: var(--muted); }
+.paper-links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+/* =========================
+   Teaching page
+========================= */
+
+.teaching-list {
+  margin-top: 40px;
+}
+
+.course {
+  margin-bottom: 30px;
+}
+
+.course h2 {
+  margin-bottom: 2px;
+  font-size: 19px;
+}
+
+.course p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* =========================
+   Mobile layout
+========================= */
 
 @media (max-width: 760px) {
+
   .site-header {
     display: block;
     padding: 29px 0 23px;
@@ -226,6 +341,15 @@ a:hover { text-decoration: underline; }
     padding-top: 48px;
   }
 
-  .portrait-wrap { width: min(260px, 100%); }
-  .content-page { padding-top: 48px; }
+  .portrait-wrap {
+    width: min(260px, 100%);
+  }
+
+  .content-page {
+    padding-top: 48px;
+  }
+
+  .paper-title {
+    font-size: 19px;
+  }
 }
