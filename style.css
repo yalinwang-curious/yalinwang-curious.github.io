@@ -220,6 +220,7 @@ a:hover {
   line-height: 1.4;
   font-weight: 600;
   margin: 0 0 4px;
+  text-align: justify;
 }
 
 .paper-title a {
